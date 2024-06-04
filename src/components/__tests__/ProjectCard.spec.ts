@@ -8,7 +8,8 @@ describe('ProjectCard', () => {
     it('renders basic contents', () => {
         const testProject: Project = {
             title: 'Test Project',
-            url: 'https://www.google.com',
+            shortDescription: 'This is a test project.',
+            tags: [],
         };
 
         const wrapper = mount(ProjectCard, { props: { project: testProject } });
