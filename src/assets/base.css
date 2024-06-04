@@ -1,53 +1,50 @@
-/* color palette from <https://github.com/vuejs/theme> */
+/* colors from https://coolors.co/ */
 :root {
-    --vt-c-white: #ffffff;
-    --vt-c-white-soft: #f8f8f8;
-    --vt-c-white-mute: #f2f2f2;
+    --color-redwood: #9e5c57;
+    --color-rosy-brown: #c59996;
+    --color-pale-dogwood: #dbbfbd;
 
-    --vt-c-black: #181818;
-    --vt-c-black-soft: #222222;
-    --vt-c-black-mute: #282828;
+    --color-black: #000000;
+    --color-rich-black: #051014;
 
-    --vt-c-indigo: #2c3e50;
+    --color-timberwolf: #eadeda;
+    --color-snow: #f8f3f2;
 
-    --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-    --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-    --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-    --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-    --vt-c-text-light-1: var(--vt-c-indigo);
-    --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-    --vt-c-text-dark-1: var(--vt-c-white);
-    --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+    --color-aero: #5db7de;
 }
 
 /* semantic color variables for this project */
 :root {
-    --color-background: var(--vt-c-white);
-    --color-background-soft: var(--vt-c-white-soft);
-    --color-background-mute: var(--vt-c-white-mute);
+    --color-background: var(--color-redwood);
+    --color-background-soft: var(--color-rosy-brown);
+    --color-background-mute: var(--color-pale-dogwood);
 
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
+    --color-foreground: var(--color-timberwolf);
 
-    --color-heading: var(--vt-c-text-light-1);
-    --color-text: var(--vt-c-text-light-1);
-
-    --section-gap: 160px;
+    --color-border: var(--color-foreground);
+    --color-heading: var(--color-foreground);
+    --color-text: var(--color-foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-background: var(--vt-c-black);
-        --color-background-soft: var(--vt-c-black-soft);
-        --color-background-mute: var(--vt-c-black-mute);
+/* common spacing */
+:root {
+    --space-base: 1rem;
 
-        --color-border: var(--vt-c-divider-dark-2);
-        --color-border-hover: var(--vt-c-divider-dark-1);
+    --space-xxxs: calc(var(--space-base) * 0.125);
+    --space-xxs: calc(var(--space-base) * 0.25);
+    --space-xs: calc(var(--space-base) * 0.5);
+    --space-s: calc(var(--space-base) * 0.75);
+    --space-m: var(--space-base);
+    --space-l: calc(var(--space-base) * 2);
+    --space-xl: calc(var(--space-base) * 4);
+    --space-xxl: calc(var(--space-base) * 8);
+    --space-xxxl: calc(var(--space-base) * 16);
+    --space-xxxxl: calc(var(--space-base) * 32);
+}
 
-        --color-heading: var(--vt-c-text-dark-1);
-        --color-text: var(--vt-c-text-dark-2);
-    }
+h1 {
+    color: var(--color-heading);
+    font-weight: bold;
 }
 
 *,
