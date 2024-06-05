@@ -1,13 +1,16 @@
 <template>
-    <header>
-        <h1>Featured Projects</h1>
-    </header>
-    <main>
-        <div class="tag-row">
-            <TagElement v-for="(tag, index) in Tags" :key="index" :tag="tag" />
-        </div>
-        <ProjectField :projects="filteredProjects" />
-    </main>
+    <div class="container">
+        <header>
+            <h1>Featured Projects</h1>
+        </header>
+        <main>
+            Filter by topic
+            <div class="tag-row">
+                <TagElement v-for="(tag, index) in Tags" :key="index" :tag="tag" />
+            </div>
+            <ProjectField :projects="filteredProjects" />
+        </main>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -30,15 +33,15 @@ const filteredProjects = computed(() =>
 </script>
 
 <style scoped>
-header {
-    margin-top: var(--space-s);
-    margin-left: var(--space-m);
+.container {
+    padding-top: var(--space-s);
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
 }
 
 .tag-row {
     display: flex;
     flex-direction: row;
-    margin-left: var(--space-m);
     column-gap: var(--space-xxs);
     row-gap: var(--space-xxs);
     flex-wrap: wrap;

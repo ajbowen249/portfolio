@@ -1,7 +1,7 @@
 <template>
     <a class="branded-link" :href="href">
         <div v-if="iconName == 'npm'" class="brand-icon-background"></div>
-        <component v-if="IconMap[iconName]" :is="IconMap[iconName]" class="brand-icon" width="30" height="30" />
+        <component v-if="IconMap[iconName]" :is="IconMap[iconName]" class="brand-icon" />
         <span class="branded-link-text">{{ text }}</span>
     </a>
 </template>
@@ -29,7 +29,8 @@ defineProps<{
 .branded-link {
     margin-left: var(--space-xxs);
     display: grid;
-    height: var(--space-xl);
+    height: var(--space-l);
+    margin-bottom: var(--space-m);
     align-content: center;
     color: var(--text-color);
     font-size: 20pt;
@@ -43,6 +44,8 @@ defineProps<{
     margin-top: 10px;
     margin-left: var(--space-xxs);
     margin-right: var(--space-xxs);
+    width: 30px;
+    height: 30px;
 }
 
 .branded-link-text {
@@ -58,5 +61,25 @@ defineProps<{
     margin-top: 15px;
     background-color: white;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .branded-link {
+        height: var(--space-l);
+        font-size: 15pt;
+    }
+
+    .brand-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .branded-link-text {
+        margin-top: var(--space-xxs);
+    }
+
+    .brand-icon-background {
+        height: 15px;
+    }
 }
 </style>

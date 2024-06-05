@@ -62,7 +62,7 @@ const fieldStyleVars = computed(() => {
     flex-direction: column;
     row-gap: var(--space-l);
     column-gap: var(--space-l);
-    padding: var(--space-m);
+    padding-top: var(--space-m);
     flex-wrap: wrap;
     max-height: var(--max-height);
 }

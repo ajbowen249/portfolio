@@ -25,7 +25,7 @@ const onClickTag = () => filterStore.selectTag(filterStore.selectedTag === props
     color: var(--color-rich-black);
     background-color: var(--color-text);
     border-radius: var(--space-xxs);
-    padding: var(--space-xxxs);
+    padding: var(--space-xxs);
     border-bottom: 1px solid var(--color-snow);
     border-right: 1px solid var(--color-snow);
     font-family: 'Courier New', Courier, monospace;
