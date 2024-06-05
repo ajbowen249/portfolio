@@ -67,6 +67,10 @@ defineProps<{
 </script>
 
 <style scoped>
+h2 {
+    margin-bottom: var(--space-xs);
+}
+
 .project-card {
     --image-width: 25rem;
 
@@ -105,7 +109,6 @@ defineProps<{
 }
 
 .short-description {
-    margin-left: var(--space-s);
     font-style: italic;
 }
 
@@ -113,19 +116,22 @@ defineProps<{
     grid-column: 2;
     grid-row: 2;
     max-width: var(--image-width);
+    padding: var(--space-s);
 }
 
 .additional-details-grid {
     display: flex;
     flex-direction: column;
-    margin-top: var(--space-m);
 }
 
 .tag-row {
     display: flex;
     flex-direction: row;
-    margin-left: var(--space-xs);
+    flex-wrap: wrap;
     column-gap: var(--space-xxs);
+    row-gap: var(--space-xxs);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-xs);
 }
 
 @media only screen and (max-width: 900px) {
@@ -134,7 +140,6 @@ defineProps<{
 
         border-width: var(--space-xxs);
         border-radius: var(--space-xs);
-        padding: var(--space-s);
 
         grid-template-rows: auto auto auto auto;
         grid-template-columns: auto;
