@@ -1,4 +1,4 @@
-/* colors from https://coolors.co/ */
+/* named colors from https://coolors.co/ */
 :root {
     --color-redwood: #9e5c57;
     --color-rosy-brown: #c59996;
@@ -11,13 +11,14 @@
     --color-snow: #f8f3f2;
 
     --color-aero: #5db7de;
+
+    /* Not from coolers; just playing with picker */
+    --color-soft-blue: #434273;
 }
 
 /* semantic color variables for this project */
 :root {
-    --color-background: var(--color-redwood);
-    --color-background-soft: var(--color-rosy-brown);
-    --color-background-mute: var(--color-pale-dogwood);
+    --color-background: var(--color-soft-blue);
 
     --color-foreground: var(--color-timberwolf);
 
