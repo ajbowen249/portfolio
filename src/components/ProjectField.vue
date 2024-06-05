@@ -7,29 +7,31 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, ref, onMounted } from 'vue';
 import { type Project } from '@/types';
 import ProjectCard from './ProjectCard.vue';
+import { useFilterStore } from '@/stores/filter';
 
 defineProps<{
     projects: Project[];
 }>();
 
-const containerElement = ref<HTMLDivElement>();
+const filterStore = useFilterStore();
 
-const fieldStyleVars = computed(() => {
+const containerElement = ref<HTMLDivElement>();
+const targetHeight = ref(0);
+
+onMounted(() => {
     if (!containerElement.value) {
-        return {
-            '--max-height': 500,
-        };
+        return;
     }
 
     const nodes = Array.from(containerElement.value.children) as HTMLElement[];
-    const heights = nodes.map(div => {
+    const heights = nodes.map((div) => {
         const style = window.getComputedStyle(div);
         const marginTop = parseFloat(style['marginTop']);
         const marginBottom = parseFloat(style['marginBottom']);
-        return div.offsetHeight + marginTop + marginBottom + 32;
+        return div.offsetHeight + marginTop + marginBottom + 64;
     });
 
     const totalHeight = heights.reduce((acc, height) => acc + height, 0) - 32; // -padding
@@ -38,13 +40,19 @@ const fieldStyleVars = computed(() => {
     var maxHeight = 0;
     var nodeIndex = 0;
 
-    while (maxHeight < (totalHeight * .7) && nodeIndex < heights.length) {
+    while (maxHeight < totalHeight * 0.7 && nodeIndex < heights.length) {
         maxHeight += heights[nodeIndex++];
     }
 
-    return {
-        '--max-height': `${maxHeight}px`,
-    };
+    targetHeight.value = maxHeight;
+});
+
+const fieldStyleVars = computed(() => {
+    return filterStore.selectedTag
+        ? {}
+        : {
+              '--max-height': `${targetHeight.value}px`,
+          };
 });
 </script>
 
@@ -64,5 +72,4 @@ const fieldStyleVars = computed(() => {
         max-height: none;
     }
 }
-
 </style>
