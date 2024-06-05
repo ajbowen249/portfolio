@@ -32,6 +32,34 @@ export const FeaturedProjects: Project[] = [
         tags: ['Microcontrollers', 'C++', 'Python', 'Vue.js'],
     },
     {
+        title: 'DNS Hero',
+        shortDescription: 'Command-line utility for generating and parsing Base64 DNS requests',
+        imagePath: 'https://github.com/ajbowen249/dns-hero/raw/master/gh_media/screenshot.PNG',
+        githubName: 'dns-hero',
+        tags: ['Rust'],
+    },
+    {
+        title: 'Web-Based Apple I Emulator',
+        shortDescription: 'Emulator for the original Apple computer that runs in the browser',
+        imagePath: 'https://github.com/ajbowen249/6502Suite/raw/master/gh_media/web_demo.gif',
+        githubName: '6502Suite',
+        generalLink: {
+            text: 'Live Build',
+            url: 'https://ajbowen249.github.io/6502Suite/',
+        },
+        tags: ['C++', 'Retrocomputing', 'Web'],
+    },
+    {
+        title: 'Arduino-Based Apple I Emulator',
+        shortDescription: 'Emulator for the original Apple computer that runs on an Arduino',
+        youtubeEmbedUrl: 'https://www.youtube.com/embed/1DGvXqPcBEI?si=YqylqBbPiD8Hx1uA',
+        generalLink: {
+            text: 'hackaday.io Project',
+            url: 'https://hackaday.io/project/7488-arduino-based-apple-i-emulator',
+        },
+        tags: ['C++', 'Retrocomputing', 'Microcontrollers'],
+    },
+    {
         title: "Conway's Game of Life",
         shortDescription: 'Web-based implementation using Rust and Yew',
         imagePath: 'https://github.com/ajbowen249/yew-gol/raw/main/src/assets/images/demo_screenshot.png',
@@ -60,7 +88,7 @@ export const FeaturedProjects: Project[] = [
     {
         title: 'BrOS',
         shortDescription:
-            'Proof-of-concept for an NES OS with pseudo multitasking and a robust filesystem with a web-based helper utility.',
+            'Proof-of-concept for an NES OS with pseudo multitasking and a robust filesystem with a web-based helper utility',
         imagePath: 'https://github.com/ajbowen249/bros/raw/main/gh_media/gifs/fs_demo.gif',
         githubName: 'bros',
         tags: ['C', 'Vue.js', 'TypeScript', 'Retrocomputing', 'Web'],
@@ -68,9 +96,17 @@ export const FeaturedProjects: Project[] = [
     {
         title: 'PICO-8 Spline Editor',
         shortDescription:
-            'Composite Bézier spline builder for PICO-8, mainly created to check my own knowledge of Bézier curves.',
+            'Composite Bézier spline builder for PICO-8, mainly created to check my own knowledge of Bézier curves',
         imagePath: 'https://github.com/ajbowen249/pico-8-bezier/raw/main/gh_media/gifs/spline_demo.gif',
         githubName: 'pico-8-bezier',
         tags: ['Lua', 'Games'],
+    },
+    {
+        title: 'Dungeoroo!',
+        shortDescription:
+            'Experiment in building dungeons with my own implementation of Wave Function Collapse using yew',
+        imagePath: 'https://github.com/ajbowen249/dungeoroo/raw/main/src/assets/images/stepped_demo.gif',
+        githubName: 'dungeoroo',
+        tags: ['Rust', 'Games', 'Web'],
     },
 ];
