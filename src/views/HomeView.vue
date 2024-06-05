@@ -1,15 +1,18 @@
 <template>
     <div class="container">
-        <header>
-            <h1>Featured Projects</h1>
-        </header>
-        <main>
-            Filter by topic
-            <div class="tag-row">
-                <TagElement v-for="(tag, index) in Tags" :key="index" :tag="tag" />
-            </div>
-            <ProjectField :projects="filteredProjects" />
-        </main>
+        <span class="name">Alex Bowen</span><br />
+        Software Engineer<br />
+        <a href="https://www.linkedin.com/in/alex-bowen-408228135/">LinkedIN</a><br />
+        <a href="https://github.com/ajbowen249">GitHub</a><br /><br />
+
+        <h1>Featured Personal Projects</h1>
+
+        Filter by topic
+        <div class="tag-row">
+            <TagElement v-for="(tag, index) in Tags" :key="index" :tag="tag" />
+        </div>
+
+        <ProjectField :projects="filteredProjects" />
     </div>
 </template>
 
@@ -35,8 +38,12 @@ const filteredProjects = computed(() =>
 <style scoped>
 .container {
     padding-top: var(--space-s);
-    padding-left: var(--space-m);
-    padding-right: var(--space-m);
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+}
+
+.name {
+    font-size: 40pt;
 }
 
 .tag-row {
@@ -45,5 +52,9 @@ const filteredProjects = computed(() =>
     column-gap: var(--space-xxs);
     row-gap: var(--space-xxs);
     flex-wrap: wrap;
+}
+
+a {
+    color: var(--text-color);
 }
 </style>
