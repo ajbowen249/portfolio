@@ -67,7 +67,7 @@ const fieldStyleVars = computed(() => {
     break-inside: avoid;
 }
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1630px) {
     .project-card-field {
         columns: 1;
     }
