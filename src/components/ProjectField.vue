@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card-field" :style="fieldStyleVars" ref="containerElement">
+    <div class="project-card-field" ref="containerElement">
         <div v-for="(project, index) in projects" :key="index">
             <ProjectCard :project="project" />
         </div>
@@ -58,18 +58,18 @@ const fieldStyleVars = computed(() => {
 
 <style scoped>
 .project-card-field {
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--space-l);
     column-gap: var(--space-l);
-    padding-top: var(--space-m);
-    flex-wrap: wrap;
-    max-height: var(--max-height);
+    columns: 2;
+}
+
+.project-card-field > div {
+    padding-top: var(--space-l);
+    break-inside: avoid;
 }
 
 @media only screen and (max-width: 1700px) {
     .project-card-field {
-        max-height: none;
+        columns: 1;
     }
 }
 </style>
