@@ -2,7 +2,7 @@
     <div class="container">
         <span class="name">Alex Bowen</span><br />
         Software Engineer<br />
-        <a href="https://www.linkedin.com/in/alex-bowen-408228135/">LinkedIN</a><br />
+        <a href="https://www.linkedin.com/in/alex-bowen-408228135/">LinkedIn</a><br />
         <a href="https://github.com/ajbowen249">GitHub</a><br /><br />
 
         <h1>Featured Personal Projects</h1>
