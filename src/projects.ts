@@ -32,6 +32,17 @@ export const FeaturedProjects: Project[] = [
         tags: ['Microcontrollers', 'C++', 'Python', 'Vue.js'],
     },
     {
+        title: 'Portfolio',
+        shortDescription: 'Literally this website',
+        imagePath: '/portfolio/portfolio-thumbnail.png',
+        githubName: 'portfolio',
+        generalLink: {
+            text: 'Live Build (You\'re already here)',
+            url: 'https://ajbowen249.github.io/portfolio/',
+        },
+        tags: ['TypeScript', 'Vue.js', 'Web'],
+    },
+    {
         title: 'DNS Hero',
         shortDescription: 'Command-line utility for generating and parsing Base64 DNS requests',
         imagePath: 'https://github.com/ajbowen249/dns-hero/raw/master/gh_media/screenshot.PNG',
