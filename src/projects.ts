@@ -45,7 +45,7 @@ export const FeaturedProjects: Project[] = [
     {
         title: 'DNS Hero',
         shortDescription: 'Command-line utility for generating and parsing Base64 DNS requests',
-        imagePath: 'https://github.com/ajbowen249/dns-hero/raw/master/gh_media/screenshot.PNG',
+        imagePath: 'https://github.com/ajbowen249/dns-hero/raw/main/gh_media/screenshot.PNG',
         githubName: 'dns-hero',
         tags: ['Rust'],
     },
