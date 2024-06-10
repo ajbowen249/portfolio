@@ -10,6 +10,7 @@ describe('ProjectCard', () => {
             title: 'Test Project',
             shortDescription: 'This is a test project.',
             tags: [],
+            imagePaths: [],
         };
 
         const wrapper = mount(ProjectCard, { props: { project: testProject } });
