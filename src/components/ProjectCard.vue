@@ -4,8 +4,11 @@
             <h2>{{ project.title }}</h2>
         </div>
 
-        <div v-if="project.youtubeEmbedUrl" class="visual-preview">
+        <div v-if="hasVisualPreview" class="visual-preview">
+            <img v-for="(image, index) in project.imagePaths" :key="index" :src="image" />
+
             <iframe
+                v-if="project.youtubeEmbedUrl"
                 :src="project.youtubeEmbedUrl"
                 title="YouTube video player"
                 frameborder="0"
@@ -13,10 +16,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
             />
-        </div>
-
-        <div v-if="project.imagePath" class="visual-preview">
-            <img :src="project.imagePath" />
         </div>
 
         <div class="additional-details-container">
@@ -57,13 +56,17 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import { type Project } from '@/types';
 import BrandedLink from '@/components/BrandedLink.vue';
 import TagElement from '@/components/TagElement.vue';
 
-defineProps<{
+const props = defineProps<{
     project: Project;
 }>();
+
+const hasVisualPreview = computed(() => props.project.imagePaths.length > 0 || props.project.youtubeEmbedUrl);
+
 </script>
 
 <style scoped>
