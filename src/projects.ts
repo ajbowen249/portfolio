@@ -108,6 +108,13 @@ export const FeaturedProjects: Project[] = [
         tags: ['C', 'Vue.js', 'TypeScript', 'Retrocomputing', 'Web'],
     },
     {
+        title: 'Mouse Game Prototype',
+        shortDescription:
+            'Experiment in generating a maze-like game world in Unity with a variety of encounters',
+        imagePaths: [ '/portfolio/mouse_game_demo_1.gif', '/portfolio/mouse_game_generation_demo_1.gif' ],
+        tags: ['Games'],
+    },
+    {
         title: 'PICO-8 Spline Editor',
         shortDescription:
             'Composite Bézier spline builder for PICO-8, mainly created to check my own knowledge of Bézier curves',
