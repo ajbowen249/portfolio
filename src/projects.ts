@@ -100,6 +100,14 @@ export const FeaturedProjects: Project[] = [
         tags: ['Lua', 'Games'],
     },
     {
+        title: 'VT10K',
+        shortDescription:
+            'In-progress Fantasy Console built in Unreal Engine 5, meant to mimic text-based video terminals',
+        imagePaths: [ '/portfolio/vt10k_screenshot_1.png', '/portfolio/vt10k_snake_screenshot.png' ],
+        youtubeEmbedUrl: 'https://www.youtube.com/embed/7K6JNeMeGCY',
+        tags: ['Games'],
+    },
+    {
         title: 'BrOS',
         shortDescription:
             'Proof-of-concept for an NES OS with pseudo multitasking and a robust filesystem with a web-based helper utility',
