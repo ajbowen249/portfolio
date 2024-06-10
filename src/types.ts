@@ -20,7 +20,7 @@ export interface Project {
     title: string;
     shortDescription: string;
     githubName?: string;
-    imagePath?: string;
+    imagePaths: string[];
     youtubeEmbedUrl?: string;
     npmUrl?: string;
     generalLink?: {
