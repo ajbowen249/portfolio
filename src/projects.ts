@@ -34,6 +34,17 @@ export const FeaturedProjects: Project[] = [
         tags: ['Microcontrollers', 'C++', 'Python', 'Vue.js'],
     },
     {
+        title: 'LED Matrix Tetris',
+        shortDescription: 'Tetris on a hand-built LED matrix',
+        imagePaths: [],
+        youtubeEmbedUrl: 'https://www.youtube.com/embed/nYfAjwWjQ2g?si=UQL5Q4u6hDOmxQDD',
+        generalLink: {
+            text: 'hackaday.io Project',
+            url: 'https://hackaday.io/project/3593-led-matrix-tetris-class-project',
+        },
+        tags: ['Microcontrollers', 'C++'],
+    },
+    {
         title: 'Portfolio',
         shortDescription: 'Literally this website',
         imagePaths: [ '/portfolio/portfolio-thumbnail.png' ],
