@@ -7,10 +7,10 @@ export const FeaturedProjects: Project[] = [
         imagePaths: [ '/portfolio/lait-meta-card.png' ],
         githubName: 'lait',
         npmUrl: 'https://www.npmjs.com/package/@ajbowen249/lait',
-        generalLink: {
+        generalLinks: [{
             text: 'Interactive Docs',
             url: 'https://ajbowen249.github.io/lait/',
-        },
+        }],
         tags: ['TypeScript', 'Node.js', 'Vue.js'],
     },
     {
@@ -19,6 +19,10 @@ export const FeaturedProjects: Project[] = [
         imagePaths: [],
         youtubeEmbedUrl: 'https://www.youtube.com/embed/zW9-hpuNDQQ?si=VcKXkeCgi0DADQFZ',
         githubName: 'mol',
+        generalLinks: [{
+            text: 'hackaday.com Article',
+            url: 'https://hackaday.com/2024/06/12/baldurs-gate-iii-comes-to-the-trs-80-model-100/',
+        }],
         tags: ['Assembly', 'Retrocomputing', 'Games', 'Python'],
     },
     {
@@ -27,10 +31,10 @@ export const FeaturedProjects: Project[] = [
         imagePaths: [],
         youtubeEmbedUrl: 'https://www.youtube.com/embed/tLIPRsWJwsU?si=2V8Ifi7XyUoKbMfa',
         githubName: 'blinknet',
-        generalLink: {
+        generalLinks: [{
             text: 'hackaday.io Project',
             url: 'https://hackaday.io/project/163013-blinknet',
-        },
+        }],
         tags: ['Microcontrollers', 'C++', 'Python', 'Vue.js'],
     },
     {
@@ -38,10 +42,16 @@ export const FeaturedProjects: Project[] = [
         shortDescription: 'Tetris on a hand-built LED matrix',
         imagePaths: [],
         youtubeEmbedUrl: 'https://www.youtube.com/embed/nYfAjwWjQ2g?si=UQL5Q4u6hDOmxQDD',
-        generalLink: {
-            text: 'hackaday.io Project',
-            url: 'https://hackaday.io/project/3593-led-matrix-tetris-class-project',
-        },
+        generalLinks: [
+            {
+                text: 'hackaday.com Article',
+                url: 'https://hackaday.com/2015/01/21/arduino-tetris-on-a-multiplexed-led-matrix/',
+            },
+            {
+                text: 'hackaday.io Project',
+                url: 'https://hackaday.io/project/3593-led-matrix-tetris-class-project',
+            },
+        ],
         tags: ['Microcontrollers', 'C++'],
     },
     {
@@ -49,10 +59,10 @@ export const FeaturedProjects: Project[] = [
         shortDescription: 'Literally this website',
         imagePaths: [ '/portfolio/portfolio-thumbnail.png' ],
         githubName: 'portfolio',
-        generalLink: {
+        generalLinks: [{
             text: 'Live Build (You\'re already here)',
             url: 'https://ajbowen249.github.io/portfolio/',
-        },
+        }],
         tags: ['TypeScript', 'Vue.js', 'Web'],
     },
     {
@@ -67,10 +77,10 @@ export const FeaturedProjects: Project[] = [
         shortDescription: 'Emulator for the original Apple computer that runs in the browser',
         imagePaths: [ 'https://github.com/ajbowen249/6502Suite/raw/master/gh_media/web_demo.gif' ],
         githubName: '6502Suite',
-        generalLink: {
+        generalLinks: [{
             text: 'Live Build',
             url: 'https://ajbowen249.github.io/6502Suite/',
-        },
+        }],
         tags: ['C++', 'Retrocomputing', 'Web'],
     },
     {
@@ -78,10 +88,10 @@ export const FeaturedProjects: Project[] = [
         shortDescription: 'Emulator for the original Apple computer that runs on an Arduino',
         imagePaths: [],
         youtubeEmbedUrl: 'https://www.youtube.com/embed/1DGvXqPcBEI?si=YqylqBbPiD8Hx1uA',
-        generalLink: {
+        generalLinks: [{
             text: 'hackaday.io Project',
             url: 'https://hackaday.io/project/7488-arduino-based-apple-i-emulator',
-        },
+        }],
         tags: ['C++', 'Retrocomputing', 'Microcontrollers'],
     },
     {
@@ -89,10 +99,10 @@ export const FeaturedProjects: Project[] = [
         shortDescription: 'Web-based implementation using Rust and Yew',
         imagePaths: [ 'https://github.com/ajbowen249/yew-gol/raw/main/src/assets/images/demo_screenshot.png' ],
         githubName: 'yew-gol',
-        generalLink: {
+        generalLinks: [{
             text: 'Live Build',
             url: 'https://ajbowen249.github.io/yew-gol/',
-        },
+        }],
         tags: ['Rust', 'Games', 'Web'],
     },
     {
