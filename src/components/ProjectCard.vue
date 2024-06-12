@@ -31,10 +31,11 @@
                 </div>
 
                 <BrandedLink
-                    v-if="project.generalLink"
+                    v-for="(link, index) in project.generalLinks"
+                    :key="index"
                     icon-name="none"
-                    :href="project.generalLink.url"
-                    :text="project.generalLink.text"
+                    :href="link.url"
+                    :text="link.text"
                 />
 
                 <BrandedLink

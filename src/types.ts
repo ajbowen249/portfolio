@@ -23,10 +23,10 @@ export interface Project {
     imagePaths: string[];
     youtubeEmbedUrl?: string;
     npmUrl?: string;
-    generalLink?: {
+    generalLinks?: {
         text: string;
         url: string;
-    };
+    }[];
     tags: Tag[];
 }
 
