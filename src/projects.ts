@@ -19,10 +19,16 @@ export const FeaturedProjects: Project[] = [
         imagePaths: [],
         youtubeEmbedUrl: 'https://www.youtube.com/embed/zW9-hpuNDQQ?si=VcKXkeCgi0DADQFZ',
         githubName: 'mol',
-        generalLinks: [{
-            text: 'hackaday.com Article',
-            url: 'https://hackaday.com/2024/06/12/baldurs-gate-iii-comes-to-the-trs-80-model-100/',
-        }],
+        generalLinks: [
+            {
+                text: 'pcgamer.com Article',
+                url: 'https://www.pcgamer.com/hardware/gaming-laptops/this-8-bit-demake-of-baldurs-gate-3-was-made-for-a-40-year-old-laptop-and-its-a-massive-shot-of-pure-1980s-gaming-nostalgia/',
+            },
+            {
+                text: 'hackaday.com Article',
+                url: 'https://hackaday.com/2024/06/12/baldurs-gate-iii-comes-to-the-trs-80-model-100/',
+            }
+        ],
         tags: ['Assembly', 'Retrocomputing', 'Games', 'Python'],
     },
     {
