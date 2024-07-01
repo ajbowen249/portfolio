@@ -32,6 +32,14 @@ export const FeaturedProjects: Project[] = [
         tags: ['Assembly', 'Retrocomputing', 'Games', 'Python'],
     },
     {
+        title: "Dungeon Delver Engine",
+        shortDescription: "A game engine for the TRS-80 Model 100 and ZX Spectrum based on OGL SRD 5.1",
+        imagePaths: [ 'https://github.com/ajbowen249/dungeon-delver-engine/blob/main/gh_media/editor_demo_1.gif?raw=true' ],
+        githubName: 'dungeon-delver-engine',
+        generalLinks: [],
+        tags: ['Assembly', 'Retrocomputing', 'Games', 'Python'],
+    },
+    {
         title: 'BlinkNet',
         shortDescription: 'Audio-synchronized centerpieces built on the ESP-8266',
         imagePaths: [],
