@@ -120,6 +120,18 @@ export const FeaturedProjects: Project[] = [
         tags: ['Rust', 'Games', 'Web'],
     },
     {
+        title: 'Bleckers (Blazor + checkers)',
+        shortDescription:
+            'The game of Checkers, written in .NET Blazor',
+        imagePaths: [ 'https://github.com/ajbowen249/Bleckers/raw/main/gh_media/screenshot.png' ],
+        githubName: 'Bleckers',
+        generalLinks: [{
+            text: 'Playable Version',
+            url: 'https://ajbowen249.github.io/Bleckers/',
+        }],
+        tags: ['Web', 'C#', '.NET'],
+    },
+    {
         title: 'PicoRico',
         shortDescription:
             'Proof-of-concept for a Loco-Roco-like game for PICO-8; Includes a robust pipeline with unit tests and levels built in Blender 3D',
@@ -155,7 +167,7 @@ export const FeaturedProjects: Project[] = [
         shortDescription:
             'Experiment in generating a maze-like game world in Unity with a variety of encounters',
         imagePaths: [ '/portfolio/mouse_game_demo_1.gif', '/portfolio/mouse_game_generation_demo_1.gif' ],
-        tags: ['Games'],
+        tags: ['Games', 'C#'],
     },
     {
         title: 'PICO-8 Spline Editor',

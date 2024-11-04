@@ -1,6 +1,7 @@
 export const Tags = [
     'C',
     'C++',
+    'C#',
     'TypeScript',
     'Python',
     'Rust',
@@ -12,6 +13,7 @@ export const Tags = [
     'Lua',
     'Microcontrollers',
     'Web',
+    '.NET',
 ] as const;
 
 export type Tag = (typeof Tags)[number];
