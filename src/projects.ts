@@ -2,16 +2,18 @@ import type { Project } from './types';
 
 export const FeaturedProjects: Project[] = [
     {
-        title: 'lait: A TypeScript Replacement for AWK',
-        shortDescription: 'Allows AWK-like text processing with the familiarity of TypeScript.',
-        imagePaths: [ '/portfolio/lait-meta-card.png' ],
-        githubName: 'lait',
-        npmUrl: 'https://www.npmjs.com/package/@ajbowen249/lait',
-        generalLinks: [{
-            text: 'Interactive Docs',
-            url: 'https://ajbowen249.github.io/lait/',
-        }],
-        tags: ['TypeScript', 'Node.js', 'Vue.js'],
+        title: "Þe Auld Tomes: Bamboozling",
+        shortDescription: "An in-progress 3D Action RPG in PICO-8. Uses a custom software renderer to accomplish 3D, and leans on a robust build system and custom level editor.",
+        imagePaths: [],
+        youtubeEmbedUrl: 'https://www.youtube.com/embed/KpriNOfzIBM?si=GpMT-kGlOVWx3yf3',
+        githubName: 'auld-tomes-public',
+        generalLinks: [
+            {
+                text: 'Play it here!',
+                url: 'https://ajbowen249.github.io/auld-tomes-public/',
+            },
+        ],
+        tags: ['Lua', 'Games'],
     },
     {
         title: "TRS-80 Model 100 Demake of Baldur's Gate III",
@@ -30,6 +32,18 @@ export const FeaturedProjects: Project[] = [
             }
         ],
         tags: ['Assembly', 'Retrocomputing', 'Games', 'Python'],
+    },
+    {
+        title: 'lait: A TypeScript Replacement for AWK',
+        shortDescription: 'Allows AWK-like text processing with the familiarity of TypeScript.',
+        imagePaths: [ '/portfolio/lait-meta-card.png' ],
+        githubName: 'lait',
+        npmUrl: 'https://www.npmjs.com/package/@ajbowen249/lait',
+        generalLinks: [{
+            text: 'Interactive Docs',
+            url: 'https://ajbowen249.github.io/lait/',
+        }],
+        tags: ['TypeScript', 'Node.js', 'Vue.js'],
     },
     {
         title: "Dungeon Delver Engine",

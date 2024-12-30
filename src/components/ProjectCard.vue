@@ -42,7 +42,7 @@
                     v-if="project.githubName"
                     icon-name="github"
                     :href="`https://github.com/ajbowen249/${project.githubName}`"
-                    :text="`ajbowen249/${project.githubName}`"
+                    :text="`${project.githubName}`"
                 />
 
                 <BrandedLink
